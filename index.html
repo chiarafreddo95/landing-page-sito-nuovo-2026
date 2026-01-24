@@ -50,6 +50,10 @@
     <!-- HERO SECTION -->
 <section class="hero">
 
+     <!-- Sfondo parallax -->
+    <div class="hero-bg"></div>
+
+    <!-- Contenuto sopra lo sfondo -->
     <div class="d-flex">
         
             
@@ -100,24 +104,35 @@
 
 <section class="bg-aurora">
     
-
+   
     <div class="cta">
-        
         <h2 class="cta__title">/ Esplora /</h2>
-        
 
         <div class="cta-instructions">
             <p class="simbolo_cta">&lt</p>
-            <p class="cta__body">Esplora il render e lascia che la luce scolpisca lo spazio, trasformi i materiali e dia vita ad atmosfere sempre diverse. Al termine del viaggio otterrai la chiave per accedere all’archivio segreto dei miei lavori più significativi.</p>
+            <p class="cta__body">
+                Esplora il render e lascia che la luce scolpisca lo spazio, trasformi i materiali e dia vita ad atmosfere sempre diverse. Al termine del viaggio otterrai la chiave per accedere all’archivio segreto dei miei lavori più significativi.
+            </p>
             <p class="simbolo_cta">/&gt</p>
-        </div>
-        
-
     </div>
-
 </section>
 
     
+
+<!-- JS PARALLAX -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const bg = document.querySelector('.hero-bg');
+
+    function updateParallax() {
+        const scrollY = window.scrollY;
+        bg.style.transform = `translateY(${scrollY * 0.1}px)`; // velocità parallax
+        requestAnimationFrame(updateParallax);
+    }
+
+    updateParallax();
+});
+</script>
 
 
 
