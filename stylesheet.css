@@ -1,0 +1,214 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+
+
+
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+.img {
+    max-width: 100%;
+    display: block;
+
+}
+
+
+header {
+    height: 6rem;
+    width: 100vw;
+    max-inline-size: 60%;
+    margin: 0 auto;
+    
+}
+
+.d-flex-header {
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    margin-top: 2em;
+    /* background-color: aqua; */
+
+}
+
+
+.incipit {
+
+    font-size: 1.5rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #000000;
+    text-align: left;
+    margin: 0 auto;
+    max-inline-size: 60%;
+    letter-spacing: 0.05em;
+    line-height: 2;
+    /* BILANCIAMENTO TIPOGRAFICO INCIPIT */
+    text-wrap: balance;
+    
+}
+
+.incipit-accents {
+    
+    color: rgb(123, 123, 111);
+    /* color: rgb(255, 255, 255); */
+    font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  padding: 0.1em;
+  background-color: rgba(155, 153, 139, 0.081);
+  
+
+
+}
+
+.simbolo {
+    text-align: center;
+}
+
+
+.d-flex {
+    background-image: url(Post_prod2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+    /* OMBRA HERO */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.35);
+}
+
+.flex__body {
+    /* background-color: lightblue; */
+    font-size: 2rem;
+    color: rgb(50, 50, 50);
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: .5em;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.25);
+}
+
+/* IL TUO SPAZIO */
+.flex__title {
+    font-size: 7rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #F0EEE9;
+    letter-spacing: 0.06em;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    text-shadow: 0 6px 12px rgba(0,0,0,0.35);
+
+}
+
+
+
+.title-bg {
+    
+    background-color: rgba(155,153,139,0.85);
+    margin: 0 auto;
+
+}
+
+.flex__body, .flex__title {
+    margin-block: 0.1em;
+    border: #F0EEE9 solid 0.2rem;
+    /* ombra testi hero */
+    
+}
+
+.accent-text {
+
+    color: #F0EEE9;
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+    
+}
+
+.main-flex {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    max-inline-size: 60%;
+    font-size: 1.2em;
+
+}
+
+/* bilanciamento figli diretti del flex row */
+.main-flex > div {
+
+    flex: 1;
+}
+
+.main__title, .cta__title {
+    color: rgb(92, 92, 92);
+}
+
+.main--items p {
+    line-height: 1.6;
+}
+
+
+.cta {
+    
+    max-inline-size: 60%;
+    margin: 0 auto;
+    font-weight: 300;
+    font-style: normal;
+    max-inline-size: 60%;
+    font-size: 1.2em;
+    line-height: 1.6;
+    background-color: aqua;
+    background-image: (url(C:\Users\Chiara\Documents\GitHub\landing-page-sito-nuovo-2026\Post_prod2.jpg));
+}
+
+.cta__body {
+    margin: 0 auto;
+}
+
+
+/* main section da row a colonna */
+    @media (min-width:78rem)
+    {.main-flex{
+        flex-direction: row;
+        gap: 3em;} } 
+
+
+    /* html font responsive */
+    @media (max-width:60rem)
+    {html
+    {font-size: 75%}}
+
+
+    /* RIMOZIONE TEMPORANEA PARALLAX MOBILE */
+
+    @media (max-width: 60rem) {
+        .d-flex {background-attachment: scroll}}
+
+
+
+
