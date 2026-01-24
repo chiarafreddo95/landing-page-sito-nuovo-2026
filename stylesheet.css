@@ -77,7 +77,7 @@ header {
 
 
 .d-flex {
-    background-image: url(Post_prod2.jpg);
+    background-image: url(img/Post_prod2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -164,7 +164,7 @@ header {
     flex: 1;
 }
 
-.main__title, .cta__title {
+.main__title {
     color: rgb(92, 92, 92);
 }
 
@@ -172,6 +172,16 @@ header {
     line-height: 1.6;
 }
 
+
+.bg-aurora {
+    margin-top: 4em;
+    background-image: url(img/aurora.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+}
 
 .cta {
     
@@ -182,12 +192,48 @@ header {
     max-inline-size: 60%;
     font-size: 1.2em;
     line-height: 1.6;
-    background-color: aqua;
-    background-image: (url(C:\Users\Chiara\Documents\GitHub\landing-page-sito-nuovo-2026\Post_prod2.jpg));
+    color: #F0EEE9;
+    padding: 2em;
+    
+    /* background-color: blue; */
+    
 }
+
+.cta-instructions {
+    background-color: rgba(0,0,0,0.4);
+    border: #F0EEE9 solid 0.15rem;
+    /* padding intorno al testo insrtuctions relativo a VW */
+    padding: 1rem 5vw;
+    margin: 0 auto;
+    box-shadow: inset 0px 1px 18px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.cta__title {
+    color: #F0EEE9;
+}
+
+
 
 .cta__body {
     margin: 0 auto;
+    font-size: 1em;
+    font-weight: 500;
+    text-wrap: balance;
+}
+
+.simbolo_cta {
+    text-align: center;
+    font-size: 1em;
+    margin: 0;
+}
+
+
+/* FOCUS VISIBLE BLU */
+:focus-visible {
+  outline: 3px solid #005fcc;
+  outline-offset: 2px;
 }
 
 
