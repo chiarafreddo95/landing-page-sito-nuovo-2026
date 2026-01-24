@@ -251,8 +251,8 @@ header {
 
     /* RIMOZIONE TEMPORANEA PARALLAX MOBILE */
 
-    @media (max-width: 60rem) {
-        .d-flex {background-attachment: scroll}}
+    /* @media (max-width: 60rem) {
+        .d-flex {background-attachment: scroll}} */
 
 
 
