@@ -240,8 +240,179 @@ header {
 
 .simbolo_cta {
     text-align: center;
-    font-size: 1em;
+    font-size: 1.2em;
+    font-weight: 500;
 }
+
+
+
+
+/* ARTICOLI RECENSIONI GRID*/
+
+.testimonials-section-title {
+    font-size: 1.8rem;
+    color: rgb(92, 92, 92);
+    text-align: center;
+
+}
+/* grid layout */
+.grid-layout {
+    grid-auto-columns: 1fr;
+    width: 80vw;
+    margin: 2.5em auto;
+    display: grid;
+    gap: 2em;
+    grid-template-areas:
+    'testimonial-01'
+    'testimonial-02'
+    'testimonial-03'
+    'testimonial-04'
+    'testimonial-05';
+
+}
+
+/* stili e padding articles CARDS (figli diretti di grid-layout) */
+.grid-layout > article {
+    box-shadow: 6px 12px 5px rgba(0, 0, 0, 0.25);
+    padding: 1rem 4vw;
+    margin: 0 auto;
+    border-radius: 1em;
+}
+
+.flex-testimonial {
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.testimonial-paragrafi {
+    text-wrap: balance;
+    font-weight: 400;
+}
+
+/* come arrotondare la foto?? */
+.testimonial-pic > img {
+    border-radius: 50%;
+    border: solid 0.15rem #F0EEE9;
+    box-shadow: 2px 3px 3px rgba(0,0,0,.25);
+}
+
+.testimonial-d-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-definitions > p {
+    margin: 0;
+
+    
+}
+
+.testimonial-position {
+margin: 0;
+}
+    
+
+.testimonial-name {
+    font-size: 1.2rem;
+    line-height: 0.9;
+    margin: 0;
+    margin-bottom: .5rem ;
+}
+
+
+.testimonial-position {
+    text-transform: uppercase;
+    font-size: 0.65rem;
+    font-weight: 500;
+}
+
+
+.museo-img {
+    max-width: 30%;
+}
+/* stili e padding articles CARDS (figli diretti di grid-layout) */
+
+
+
+/* definizione grid-areas e colori sfondo*/
+.testimonial-01 {
+
+    background-color: #e5e7e9;
+    grid-area: testimonial-01;
+}
+
+.testimonial-02 {
+    background-color: #056061;
+    grid-area: testimonial-02;
+    color: #F0EEE9;
+
+}
+.testimonial-03 {
+    background-color:#ebede7;
+    grid-area: testimonial-03;
+}
+.testimonial-04 {
+    background-color: #fff6f6;
+    grid-area: testimonial-04;
+}
+
+.testimonial-05 {
+    background-color: #3b3a3b;
+    color: #F0EEE9;
+    grid-area: testimonial-05;
+}
+
+
+.mockup {
+
+    width: 100vw;
+    position: center;
+
+}
+
+footer {
+    padding: 2em 4vw;
+    font-size: 1rem;
+    font-weight: 300;
+    width: 100vw;
+}
+
+
+.footer-title {
+    font-size: 1.8rem;
+    color: rgb(92, 92, 92);
+    margin-bottom: 0;
+}
+
+.footer-body {
+    font-size: 1rem;
+    color: rgb(92, 92, 92);
+    margin-top: 0.5em;
+}
+
+/* media query grids */
+@media (min-width:30em){
+.grid-layout {
+    grid-template-areas:
+    'testimonial-04 testimonial-04'
+    'testimonial-02 testimonial-01'
+    'testimonial-03 testimonial-01'
+    'testimonial-05 testimonial-05';
+}
+}
+
+@media (min-width:70em){
+.grid-layout {
+    grid-template-areas:
+    'testimonial-01 testimonial-01 testimonial-02 testimonial-04'
+    'testimonial-03 testimonial-05 testimonial-05 testimonial-04'
+    
+}
+}
+
 
 
 /* FOCUS VISIBLE BLU */
