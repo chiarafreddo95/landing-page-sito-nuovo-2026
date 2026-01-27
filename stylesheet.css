@@ -500,76 +500,38 @@ footer {
 
 
 
-
-
-
-
-
-@media (min-width: 40rem) {
-    .title-bg {
-        font-size: 1.2rem;
-        border: #F0EEE9 solid 0.2rem;
-    }
-
-    .flex__title {
-        font-size: 5rem;
-    }
-}
-
-
-@media (min-width: 50rem) {
-    .title-bg {
-        font-size: 1rem;
-        border: #F0EEE9 solid 0.2rem;
-    }
-
+@media (min-width: 30rem) {
+    
     .flex__title {
         font-size: 4rem;
     }
+
+    .flex__body {
+     font-size: 1rem;
+}
 }
 
 
-
-@media (min-width: 55rem) {
-    .title-bg {
-        font-size: 1.2rem;
-        border: #F0EEE9 solid 0.2rem;
-    }
-
+@media (min-width: 40rem) {
+    
     .flex__title {
-        font-size: 5rem;
+        font-size: 4.2rem;
     }
-}
 
+    .flex__body {
+     font-size: 1.2rem;
+}
+}
 
 
 @media (min-width: 60rem) {
-    .title-bg {
-        font-size: 1.5rem;
-        border: #F0EEE9 solid 0.2rem;
-    }
-
+    
     .flex__title {
-        font-size: 6.5rem;
+        font-size: 5.5rem;
     }
+
+    .flex__body {
+     font-size: 1.4rem;
 }
-
-
-
-@media (min-width: 65rem) {
-    .title-bg {
-        font-size: 1.7rem;
-        border: #F0EEE9 solid 0.2rem;
-    }
-
-    .flex__title {
-        font-size: 7rem;
-    }
 }
-
-
-
-
-
-
 
