@@ -20,6 +20,42 @@
 
 <body>
 
+<section class="navbar">
+
+<!-- hamburger simbolo -->
+
+<div id="hamburger" tabindex="0"><svg class="menu-start" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"> <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> <svg class="menu-close" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></div>
+
+    <!-- primary nav-bar -->
+<ul class="nav-links">
+
+
+    <li>
+        <a href="">Home</a>
+    </li>
+
+    <li>
+        <a href="">About</a>
+    </li>
+
+    <li>
+        <a href="https://www.collegiogeometri-casalemonferrato.it/museo-dinamico/video-museo-dinamico-mudi/">MU.DI.</a>
+    </li>
+
+    <li>
+        <a href="">Portfolio</a>
+    </li>
+
+    <li>
+        <a href="">Grafiche</a>
+    </li>
+
+</ul>
+
+</section>
+
+
+
 
 
 <header class="d-flex-header">
@@ -145,7 +181,9 @@
         </div>
 
         <div class="testimonial-paragrafi">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            <p>"Lavorare con lei alla realizzazione del MU.DI. è stato un percorso di rara precisione tecnica e sensibilità ricostruttiva. Ha saputo tradurre i complessi schemi idraulici di metà '800 della nostra ex centrale in modelli digitali di assoluto rigore scientifico.
+Il suo lavoro, iniziato con la meticolosa modellazione dell'intero edificio (SketchUp) e degli impianti (Rhinoceros), è stato il cuore pulsante della nostra esposizione: dalla preparazione dei file .stl per la stampa 3D del plastico in scala 1:25, fino alla regia dei video animati. Ha dimostrato una padronanza eccezionale nel montaggio finale, riuscendo a rendere fruibile e affascinante il funzionamento idraulico attraverso suoni, ritmi e sottotitoli curati in ogni dettaglio.
+Non ha solo 'disegnato' un museo; ha ridato vita a un pezzo di storia del nostro territorio, trasformando la tecnica pura in un'esperienza divulgativa dinamica ed emozionante. Una professionista capace di governare l'intero processo creativo, dal rilievo alla post-produzione."</p>
 
             <div class="flex-testimonial">
 
@@ -180,7 +218,7 @@
 
 
         <div class="testimonial-paragrafi">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to</p>
+            <p>"Precisione millimetrica e rigore scientifico. Ha tradotto i nostri concept in modelli 3D impeccabili, gestendo con estrema maestria vincoli tecnici complessi e geometrie evolute, come la disposizione sulla superficie in serie delle gocce basata sulla sequenza di Fibonacci e la modellazione della scritta a rilievo bombata. I suoi file sono stati la base perfetta per la nostra prototipazione reale."</p>
         </div>
     </article>
 
@@ -205,7 +243,7 @@
         </div>
 
         <div class="testimonial-paragrafi">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s.</p>
+            <p>"Professionalità e visione spaziale: Chiara valorizza e traduce i nostri mobili in realtà virtuale collocando i nostri progetti nell'ambiente del cliente guidandolo verso la scelta finale."</p>
         </div>
     </article>
 
@@ -230,7 +268,17 @@
         </div>
 
         <div class="testimonial-paragrafi">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            <p>"Progetti architettonici → trasformati in immagini realistiche.
+Foto-inserimenti perfetti, render che parlano da soli.
+
+Chiara sa scegliere lo strumento giusto per ogni esigenza:
+SketchUp + V-Ray per prospettive e luci realistiche.
+Photoshop per dettagli rapidi e integrazioni precise.
+
+Disponibile, creativa, affidabile.
+Rispetta le scadenze. Comunica le idee. Supera le aspettative.
+
+Collaborare con lei significa vedere il progetto prendere vita… prima ancora di costruirlo."</p>
         </div>
     </article>
 
@@ -255,8 +303,8 @@
         </div>
 
         <div class="testimonial-paragrafi">
-            <p>È stato un vero piacere collaborare con Chiara che ha sviluppato e realizzato in breve tempo il render di un progetto del quale avevamo necessità di visualizzare più dettagli.
-Sicuramente ci auguriamo possa essere l'inizio di una proficua collaborazione.
+            <p>"È stato un vero piacere collaborare con Chiara che ha sviluppato e realizzato in breve tempo il render di un progetto del quale avevamo necessità di visualizzare più dettagli.
+Sicuramente ci auguriamo possa essere l'inizio di una proficua collaborazione."
 </p>
         </div>
     </article>
@@ -302,6 +350,21 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 
+
+<script>
+// toggle sidebar da hamburger menu JavaScript
+
+
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("visible");
+    hamburger.classList.toggle("active");
+});
+
+
+</script>
 
 </body>
 
