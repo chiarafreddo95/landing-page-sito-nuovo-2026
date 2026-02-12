@@ -504,8 +504,6 @@ display:none;
 
 
 
-
-
 /* media query grids */
 @media (min-width:500px){
 .grid-layout {
@@ -555,12 +553,20 @@ display:none;
     html {
         font-size: 95%;
     }
+
+     a{
+        font-size:1.125rem;
+    }
     }
 
 
 @media (max-width:30rem) {
     html {
         font-size: 80%;
+    }
+
+    a{
+        font-size:1.125rem;
     }
     .hero-bg {
         background-attachment: scroll;
@@ -578,6 +584,10 @@ display:none;
         gap: 2rem;
     }
 }
+
+
+
+
 
 /* per non far uscire il testo dallo sfondo */
 @media (max-width: 60rem) {
@@ -611,6 +621,7 @@ display:none;
     .flex__body {
      font-size: 1rem;
 }
+
 }
 
 

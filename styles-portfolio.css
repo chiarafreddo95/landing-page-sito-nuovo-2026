@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+
+
+
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+.img {
+    max-width: 100%;
+    display: block;
+
+}
+
+main {
+    display:grid;
+    place-items:center;
+    min-height:100vh;
+}
+
+section {
+    margin-top: 10rem;
+}
+
+.container {
+    display:grid;
+    place-content:center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    --position: 50%;
+    box-shadow: 2px 8px 20px rgba(0,0,0,.5);
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: "Lato";
+    font-weight: 400;
+    letter-spacing: .2rem;
+    color: rgb(92, 92, 92);
+    display:flex;
+    justify-content: center;
+    margin-bottom:2rem;
+}
+
+.image-container {
+    max-width:1200px;
+    max-height:90vh;
+}
+
+.slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: left;
+}
+
+.scala-before {
+    position: absolute;
+    inset:0;
+    width: var(--position);
+}
+
+.slider {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    /* nascosto ma funzionante */
+    opacity: 0;
+}
+
+.slider-line {
+    position: absolute;
+    inset: 0;
+    width:.2rem;
+    height: 100%;
+    background-color: #ffff;
+    z-index: 10;
+    left: var(--position);
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.slider-button {
+    position: absolute;
+    background-color: #ffff;
+    padding: .5rem;
+    z-index: 100;
+    border-radius:100vw;
+    place-items:center;
+    top:50%;
+    left: var(--position);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    box-shadow: 1px 1px 1px hsl(0, 50%, 2% .5);
+    width: 50px;             /* dimensione fissa */
+    height: 50px;
+    display: flex;           /* per centrare SVG */
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.slider-button svg {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+.slider:focus-visible ~ .slider-button {
+    outline: 5px solid black;
+    outline-offset: 3px;
+}
